@@ -38,6 +38,7 @@ public class TableroMinas extends Tablero{
         super(fila, columna);
         numMaximo = max;
         this.inicializar();
+        this.repartir();
 
     }
 

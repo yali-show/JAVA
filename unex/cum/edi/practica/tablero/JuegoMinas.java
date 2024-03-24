@@ -4,11 +4,27 @@ import java.util.Scanner;
 
 public class JuegoMinas extends Juego{
     public TableroMinas t;
+
+    /** Constructor por defecto JuegoMinas */
     public JuegoMinas(){
         t = new TableroMinas();
     }
+
+    /**Constructor parametrisado JuegoMinas
+     * @param filas (int)
+     * @param columnas (int)
+     * */
     public JuegoMinas(int filas, int columnas){
         t = new TableroMinas(filas, columnas);
+    }
+
+    /**Constructor parametrisado JuegoMinas con minas
+     * @param filas (int)
+     * @param columnas (int)
+     * @param minas (int)
+     * */
+    public JuegoMinas(int filas, int columnas, int minas){
+        t = new TableroMinas(filas, columnas, minas);
     }
     @Override
     public boolean verSiFin(){
